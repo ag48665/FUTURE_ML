@@ -98,7 +98,7 @@ TASK_01_Sales_Forecasting/
 
 ### Monthly Sales Trend
 
-![Monthly Sales](images/monthly_sales_over_time.png)
+![Monthly Sales](images/monthly_sales_over_time.png
 
 ### Actual vs Predicted Monthly Sales
 
