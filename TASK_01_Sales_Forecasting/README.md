@@ -1,130 +1,128 @@
-\# Sales Forecasting using Random Forest
+# 📈 Sales Forecasting using Random Forest
 
+## Project Overview
 
+This project focuses on forecasting monthly sales using the **Sample Superstore** dataset and a **Random Forest Regression** model.
 
-\## Project Overview
+The workflow includes data exploration, feature engineering, model training, evaluation, and visualization of forecasting results. The objective is to demonstrate a complete machine learning pipeline for a regression problem.
 
+---
 
+## Dataset
 
-This project predicts monthly sales using historical Superstore sales data and a Random Forest Regression model.
+**Sample Superstore Dataset**
 
+- 9,994 sales transactions
+- Time period: 2014–2017
+- 21 original features
+- Monthly sales aggregated for forecasting
 
+---
 
-\## Dataset
+## Technologies
 
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Joblib
+- Jupyter Notebook
 
+---
 
-\- Sample Superstore Dataset
+## Machine Learning Workflow
 
-\- 9,994 records
+- Data Loading
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Monthly Sales Aggregation
+- Feature Engineering
+- Train/Test Split
+- Random Forest Regression
+- Model Evaluation
+- Forecast Visualization
+- Model Serialization
 
-\- 2014–2017
+---
 
+## Feature Engineering
 
+The following time-based features were created:
 
-\## Technologies
+- Year
+- Month
+- Previous Month Sales (Lag 1)
+- Previous 2 Months Sales (Lag 2)
+- Previous 3 Months Sales (Lag 3)
+- 3-Month Rolling Average
 
+---
 
+## Model Performance
 
-\- Python
+The model was evaluated on the final six months of the dataset.
 
-\- Pandas
+| Metric | Value |
+|---------|-------|
+| MAE | **19,280.33** |
+| RMSE | **23,070.12** |
 
-\- NumPy
+Although the model does not perfectly predict future sales, it successfully captures the overall sales trend and demonstrates the use of machine learning for business forecasting.
 
-\- Matplotlib
+---
 
-\- Scikit-learn
+## Project Structure
 
-\- Joblib
+```
+TASK_01_Sales_Forecasting/
+│
+├── data/
+│   └── Sample - Superstore.csv
+│
+├── images/
+│   ├── monthly_sales_over_time.png
+│   └── actual_vs_predicted_sales.png
+│
+├── models/
+│   └── random_forest_sales_model.pkl
+│
+├── sales_forecasting.ipynb
+├── requirements.txt
+└── README.md
+```
 
-\- Jupyter Notebook
+---
 
+## Visualizations
 
+### Monthly Sales Trend
 
-\## Workflow
+![Monthly Sales](images/monthly_sales_over_time.png)
 
+### Actual vs Predicted Monthly Sales
 
+![Actual vs Predicted](images/actual_vs_predicted_sales.png)
 
-1\. Data loading
+---
 
-2\. Data cleaning
+## Future Improvements
 
-3\. Exploratory Data Analysis
+- Collect more historical sales data
+- Hyperparameter tuning
+- Time-series cross-validation
+- Feature selection
+- Testing XGBoost
+- Testing Prophet
+- Testing SARIMA
+- Testing LSTM networks
 
-4\. Feature Engineering
+---
 
-5\. Model Training
+## Author
 
-6\. Model Evaluation
+**Agata Gabara**
 
-7\. Sales Forecast Visualization
+GitHub: https://github.com/ag48665
 
-
-
-\## Results
-
-
-
-MAE: 19,280.33
-
-
-
-RMSE: 23,070.12
-
-
-
-\## Project Structure
-
-
-
-data/
-
-images/
-
-models/
-
-sales\_forecasting.ipynb
-
-README.md
-
-requirements.txt
-
-
-
-\## Future Improvements
-
-
-
-\- More historical data
-
-\- Hyperparameter tuning
-
-\- XGBoost
-
-\- Prophet
-
-\- LSTM
-
-
-
-\## Visualizations
-
-
-
-\### Monthly Sales
-
-
-
-!\[Monthly Sales](images/monthly\_sales\_over\_time.png)
-
-
-
-\### Actual vs Predicted Sales
-
-
-
-!\[Actual vs Predicted](images/actual\_vs\_predicted\_sales.png)
-
-
-
+Machine Learning Internship Portfolio – Future Interns
